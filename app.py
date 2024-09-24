@@ -11,6 +11,7 @@ st.write('Elige la gráfica que desees:')
 show_histogram = st.checkbox('Histograma_Condición del vehículo')
 show_Hist_model = st.checkbox('Histograma_Tipos de vehículos')
 show_scatter = st.checkbox('Diagrama de dispersión_Odómetro')
+show_bar = st.checkbox('Gráfico de barras_Precio por modelo')
 
 
 if show_histogram:
@@ -64,3 +65,17 @@ if show_scatter:
         yaxis_title='Precio'
     )
     st.plotly_chart(fig_scatter)
+
+if show_bar:
+    fig_bar = px.bar(car_data,
+                     x='model',
+                     y='price',
+                     color='type',
+                     opacity=0.6,
+                     title="Gráfico de barras entre el <span style='color:red'>tipo de vehículo</span> vs <span style='color:red'>el modelo</span>")
+
+    fig_bar.update_layout(
+        xaxis_title='Modelo del vehículo',
+        yaxis_title='Precio'
+    )
+    st.plotly_chart(fig_bar)
