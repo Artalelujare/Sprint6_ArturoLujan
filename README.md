@@ -12,19 +12,7 @@ Bienvenido a la aplicación web de Anuncios de Venta de Coches, donde los datos 
 - **Diagrama de Dispersión:** Este gráfico te permite visualizar la relación entre el odómetro y el precio del vehículo. Es ideal para identificar tendencias y encontrar vehículos que ofrezcan el mejor valor por su precio.
 - **Gráfico de Barras del Precio del Vehículo:** Compara los precios de diferentes modelos y tipos de vehículos con este gráfico de barras, facilitando la identificación de las mejores ofertas en el mercado.
 
-## Cómo Ejecutar la Aplicación
-1. **Clona el repositorio:**
-git clone <URL_DEL_REPOSITORIO>
-cd <Sprint6_ArturoLujan>
-
-2. **Crea un entorno virtual y actívalo:**
-python -m venv env
-source env/bin/activate  # En Windows usa `env\Scripts\activate`
-
-3. **Instala las dependencias:**
-pip install -r requirements.txt
-
-4. **Ejecuta la aplicación:**
-streamlit run app.py
+## URL
+https://sprint6-arturolujan.onrender.com
 
 
