@@ -11,7 +11,7 @@ st.write('Elige la gráfica que desees:')
 show_histogram = st.checkbox('Histograma_Condición del vehículo')
 show_Hist_model = st.checkbox('Histograma_Tipos de vehículos')
 show_scatter = st.checkbox('Diagrama de dispersión_Odómetro')
-show_bar = st.checkbox('Gráfico de barras_Precio por modelo')
+show_bar = st.checkbox('Gráfico de barras_Precio del vehículo')
 
 
 if show_histogram:
@@ -20,7 +20,7 @@ if show_histogram:
                             color='condition',
                             opacity=0.6,
                             color_discrete_sequence=[
-                                '#636EFA', '#EF553B', '#00CC96', '#AB63FA', '#FFA15A'],
+                                '#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd'],
                             title="Histograma de la <span style='color:red'>condición del auto</span> vs <span style='color:red'>el año del modelo</span>")
 
     fig_hist.update_layout(
@@ -72,7 +72,7 @@ if show_bar:
                      y='price',
                      color='type',
                      opacity=0.6,
-                     title="Gráfico de barras entre el <span style='color:red'>tipo de vehículo</span> vs <span style='color:red'>el modelo</span>")
+                     title="Precio del vehículo por <span style='color:red'>tipo</span> y <span style='color:red'>modelo</span>")
 
     fig_bar.update_layout(
         xaxis_title='Modelo del vehículo',
